@@ -4,9 +4,6 @@ using UnityEngine;
 
 public abstract class AbstractFactory
 {
-    Dictionary<WeaponType, Weapon> weapons = new Dictionary<WeaponType, Weapon>();
-    Dictionary<MonsterType, Mon> monsters = new Dictionary<MonsterType, Mon>();
-    
     public Boss CreateBoss()
     {
         Boss boss = new Boss
